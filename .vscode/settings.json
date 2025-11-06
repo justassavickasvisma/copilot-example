@@ -1,0 +1,6 @@
+{
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.chat.editor.temporalContext.enabled": true,
+    "chat.edits2.enabled": true,
+    "github.copilot.chat.edits.temporalContext.enabled": true
+}
