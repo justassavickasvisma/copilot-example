@@ -60,9 +60,10 @@ function App() {
   }
 
   const saveEditCategory = () => {
-    if (editCategoryValue.trim() && !categories.includes(editCategoryValue.trim())) {
+    const trimmedValue = editCategoryValue.trim()
+    if (trimmedValue && (trimmedValue === editingCategory || !categories.includes(trimmedValue))) {
       const oldCategory = editingCategory
-      const newCategoryName = editCategoryValue.trim()
+      const newCategoryName = trimmedValue
       
       // Update categories list
       setCategories(categories.map(cat => 
